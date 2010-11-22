@@ -23,6 +23,12 @@ func (t *T) AssertTrue(value bool) {
 	}
 }
 
+func (t *T) AssertEqualInt(expected int, received int) {
+	if expected != received {
+		t.FailNow()
+	}
+}
+
 func (t *T) AssertTrueWithMessage(value bool, message string) {
 	if value == false {
 		t.FailNow()

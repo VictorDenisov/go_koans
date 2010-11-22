@@ -21,8 +21,8 @@ func TestAssertWithMessage(t *koans.T) {
 }
 
 /* Function FailNow stops execution of the current test. */
-func TestFailNow(t *koans.T) {
+func TestFillInValues(t *koans.T) {
 	if !(false) { // change this line to pass the test
-		t.FailNow()
+		t.AssertEqualInt(0, 1 + 1)
 	}
 }
