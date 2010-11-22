@@ -49,18 +49,18 @@ func Main(tests []Test) {
 		go tRunner(t, &tests[i])
 		<-t.ch
 		if t.failed {
-			println("--- ", tests[i].Name, " broken your karma.")
+			println(tests[i].Name, " has damaged your karma.")
 			println("Please keep meditating")
 			println(t.errors)
 			ok = false
 			break
 		} else {
-			println("--- ", tests[i].Name, " passed.")
+			println(tests[i].Name, " has expanded your awareness.")
 			println(t.errors)
 		}
 	}
 	if !ok {
-		println("You haven't reached enlightnment yet")
+		println("You have not yet reached enlightnment ...")
 		os.Exit(1)
 	}
 	println("Satori!!!")

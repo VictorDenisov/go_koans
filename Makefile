@@ -1,7 +1,7 @@
 RUNNERFILES=\
 	koan_runner.go
 KOANSFILES=\
-	about_testing_test.go
+	about_asserts.go
 KOANSLIB=\
 	koans.go
 SOURCES=$(KOANSLIB) $(KOANSFILES) $(RUNNERFILES)

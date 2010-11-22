@@ -1,4 +1,4 @@
-package about_testing_test
+package about_asserts
 
 import "./koans"
 

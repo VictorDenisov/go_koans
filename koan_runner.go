@@ -1,12 +1,12 @@
 package main
 
-import "./about_testing_test"
+import "./about_asserts"
 import "./koans"
 
 var tests = []koans.Test{
-	{"about_testing_test.TestAssertTruth", about_testing_test.TestAssertTruth},
-	{"about_testing_test.TestAssertWithMessage", about_testing_test.TestAssertWithMessage},
-	{"about_testing_test.TestFailNow", about_testing_test.TestFailNow},
+	{"about_asserts.TestAssertTruth", about_asserts.TestAssertTruth},
+	{"about_asserts.TestAssertWithMessage", about_asserts.TestAssertWithMessage},
+	{"about_asserts.TestFailNow", about_asserts.TestFailNow},
 }
 
 func main() {
