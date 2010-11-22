@@ -3,7 +3,7 @@ include $(GOROOT)/src/Make.inc
 
 TARG=mypackage
 GOFILES=\
-	about_asserts_test.go
+	about_testing_test.go
 
 include $(GOROOT)/src/Make.pkg
 
