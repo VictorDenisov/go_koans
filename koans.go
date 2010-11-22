@@ -3,6 +3,8 @@ package koans
 import "runtime"
 import "os"
 
+var Int__ int = -10000
+
 type T struct {
 	errors string
 	failed bool

@@ -22,7 +22,11 @@ func TestAssertWithMessage(t *koans.T) {
 
 /* Function FailNow stops execution of the current test. */
 func TestFillInValues(t *koans.T) {
-	if !(false) { // change this line to pass the test
-		t.AssertEqualInt(0, 1 + 1)
-	}
+	t.AssertEqualInt(koans.Int__, 1 + 1)
+}
+
+func TestAssertEquality(t *koans.T) {
+	expected_value := koans.Int__
+	actual_value := 1 + 1
+	t.AssertTrue(expected_value == actual_value)
 }
