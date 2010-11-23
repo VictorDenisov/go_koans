@@ -3,7 +3,11 @@ package koans
 import "runtime"
 import "os"
 
-var Int__ int = -10000
+var (
+	Int__ int = -10000
+	Intp__ *int = new(int)
+	String__ string = ""
+)
 
 type T struct {
 	errors string
