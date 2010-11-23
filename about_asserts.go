@@ -30,3 +30,9 @@ func TestAssertEquality(t *koans.T) {
 	actual_value := 1 + 1
 	t.AssertTrue(expected_value == actual_value)
 }
+
+func TestABetterWayOfAssertingEquality(t *koans.T) {
+	expected_value := koans.Int__
+	actual_value := 1 + 1
+	t.AssertEqualInt(expected_value, actual_value)
+}
