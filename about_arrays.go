@@ -21,3 +21,17 @@ func TestAccessingArrayElements(t *koans.T) {
 	t.AssertTrue(koans.String__ == a[0])
 	t.AssertTrue(koans.String__ == a[3])
 }
+
+/*
+  Slices can slice arrays only within arrays' bounds.
+  Inverted slice ranges are not allowed.
+  */
+func TestSlicingArrays(t *koans.T) {
+	a := [...]string{"peanut", "butter", "and", "jelly"}
+
+	t.AssertTrue(koans.String__ == fmt.Sprintf("%v", a[0:1]))
+	t.AssertTrue(koans.String__ == fmt.Sprintf("%v", a[0:2]))
+	t.AssertTrue(koans.String__ == fmt.Sprintf("%v", a[2:2]))
+	t.AssertTrue(koans.String__ == fmt.Sprintf("%v", a[2:]))
+	t.AssertTrue(koans.String__ == fmt.Sprintf("%v", a[:2]))
+}

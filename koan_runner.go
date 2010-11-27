@@ -15,10 +15,11 @@ var tests = []koans.Test{
 	{"about_arrays.TestCreatingArray", about_arrays.TestCreatingArray},
 	{"about_arrays.TestArraysAreValues", about_arrays.TestArraysAreValues},
 	{"about_arrays.TestAccessingArrayElements", about_arrays.TestAccessingArrayElements},
+	{"about_arrays.TestSlicingArrays", about_arrays.TestSlicingArrays},
 }
 
 var sampleTests = []koans.Test{
-	{"about_arrays.TestAccessingArrayElements", about_arrays.TestAccessingArrayElements},
+	{"about_arrays.TestSlicingArrays", about_arrays.TestSlicingArrays},
 }
 
 func main() {
