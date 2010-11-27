@@ -13,6 +13,8 @@ func TestArraysAreValues(t *koans.T) {
 	var array2 [3]int
 	array2 = array1
 	t.AssertTrue(koans.String__ == fmt.Sprintf("%v", array2))
+	array1[0] = 2
+	t.AssertTrue(koans.String__ == fmt.Sprintf("%v", array2))
 }
 
 func TestAccessingArrayElements(t *koans.T) {
