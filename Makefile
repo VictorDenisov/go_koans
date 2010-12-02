@@ -3,7 +3,8 @@ RUNNERFILES=\
 KOANSFILES=\
 	about_asserts.go\
 	about_nil.go\
-	about_arrays.go
+	about_arrays.go\
+	about_strings.go
 KOANSLIB=\
 	koans.go
 SOURCES=$(KOANSLIB) $(KOANSFILES) $(RUNNERFILES)

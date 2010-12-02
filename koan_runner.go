@@ -3,6 +3,7 @@ package main
 import "./about_asserts"
 import "./about_nil"
 import "./about_arrays"
+import "./about_strings"
 import "./koans"
 
 var tests = []koans.Test{
@@ -19,9 +20,9 @@ var tests = []koans.Test{
 }
 
 var sampleTests = []koans.Test{
-	{"about_arrays.TestSlicingArrays", about_arrays.TestSlicingArrays},
+	{"about_strings.TestDoubleQuotedStringsAreStrings", about_strings.TestDoubleQuotedStringsAreStrings},
 }
 
 func main() {
-	koans.Main(tests)
+	koans.Main(sampleTests)
 }
