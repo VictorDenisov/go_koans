@@ -43,6 +43,25 @@ func TestUseSprintfToInterpolateVaribales(t *koans.T) {
 	value2 := 2
 	str := fmt.Sprintf("The values are %s and %d", value1, value2)
 	t.AssertTrue(koans.String__ == str)
-
 }
+
+func TestYouCanGetASubstringFromAString(t *koans.T) {
+	str := "Bacon, lettuce and tomato"
+	t.AssertTrue(koans.String__ == str[7:10])
+}
+
+func TestYouCanGetASingleCharacterFromAString(t *koans.T) {
+	str := "Bacon, lettuce and tomato"
+	t.AssertTrue(koans.Char__ == str[1])
+}
+
+func TestCharactersAreBytesActually(t *koans.T) {
+	t.AssertTrue(koans.Char__ == 'a' + 1)
+}
+
+//func TestStringsCanBeSplit(t *koans.T) {
+	//str := "Sausage Egg Cheese"
+	//words := strings.Split(str, " ", -1)
+	//t.AssertTrue([]string{"Sausage", "Egg", "Cheese"} == words)
+//}
 

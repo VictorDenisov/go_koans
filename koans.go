@@ -7,6 +7,7 @@ var (
 	Int__ int = -10000
 	Intp__ *int = new(int)
 	String__ string = ""
+	Char__ byte = '0'
 )
 
 type T struct {

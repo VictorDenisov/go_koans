@@ -15,6 +15,7 @@ OBJECTS=$(SOURCES:.go=.8)
 	8g $<
 
 all: koan_runner
+	./koan_runner
 
 koan_runner: $(OBJECTS)
 	8l -o koan_runner koan_runner.8

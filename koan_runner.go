@@ -25,10 +25,13 @@ var tests = []koans.Test {
 	{"about_strings.TestPlusEqualsWillAppendToEndOfString", about_strings.TestPlusEqualsWillAppendToEndOfString},
 	{"about_strings.TestPlusEqualsAlsoLeavesOriginalStringUnmodified", about_strings.TestPlusEqualsAlsoLeavesOriginalStringUnmodified},
 	{"about_strings.TestUseSprintfToInterpolateVaribales", about_strings.TestUseSprintfToInterpolateVaribales},
+	{"about_strings.TestYouCanGetASubstringFromAString", about_strings.TestYouCanGetASubstringFromAString},
+	{"about_strings.TestYouCanGetASingleCharacterFromAString", about_strings.TestYouCanGetASingleCharacterFromAString},
+	{"about_strings.TestCharactersAreBytesActually", about_strings.TestCharactersAreBytesActually},
 }
 
 var sampleTests = []koans.Test {
-	{"about_strings.TestUseSprintfToInterpolateVaribales", about_strings.TestUseSprintfToInterpolateVaribales},
+	{"about_strings.TestCharactersAreBytesActually", about_strings.TestCharactersAreBytesActually},
 }
 
 func main() {
