@@ -4,7 +4,8 @@ KOANSFILES=\
 	about_asserts.go\
 	about_nil.go\
 	about_arrays.go\
-	about_strings.go
+	about_strings.go\
+	about_maps.go
 KOANSLIB=\
 	koans.go
 SOURCES=$(KOANSLIB) $(KOANSFILES) $(RUNNERFILES)

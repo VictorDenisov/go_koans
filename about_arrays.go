@@ -27,7 +27,7 @@ func TestAccessingArrayElements(t *koans.T) {
 /*
   Slices can slice arrays only within arrays' bounds.
   Inverted slice ranges are not allowed.
-  */
+*/
 func TestSlicingArrays(t *koans.T) {
 	a := [...]string{"peanut", "butter", "and", "jelly"}
 
