@@ -8,6 +8,7 @@ var (
 	Intp__ *int = new(int)
 	String__ string = ""
 	Char__ byte = '0'
+	StringSlice__ []string
 )
 
 type T struct {
@@ -39,6 +40,18 @@ func (t *T) AssertEqualInt(expected int, received int) {
 func (t *T) AssertTrueWithMessage(value bool, message string) {
 	if value == false {
 		t.FailNow()
+	}
+}
+
+func (t *T) AssertEqualsStringSlices(expected []string, received []string) {
+	n := len(expected)
+	if n != len(received) {
+		t.FailNow()
+	}
+	for i := 0; i < n; i++ {
+		if expected[i] != received[i] {
+			t.FailNow()
+		}
 	}
 }
 

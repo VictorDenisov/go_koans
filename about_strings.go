@@ -1,6 +1,7 @@
 package about_strings
 
 import "./koans"
+import "strings"
 import "fmt"
 
 func TestDoubleQuotedStringsAreStrings(t *koans.T) {
@@ -59,9 +60,20 @@ func TestCharactersAreBytesActually(t *koans.T) {
 	t.AssertTrue(koans.Char__ == 'a' + 1)
 }
 
-//func TestStringsCanBeSplit(t *koans.T) {
-	//str := "Sausage Egg Cheese"
-	//words := strings.Split(str, " ", -1)
-	//t.AssertTrue([]string{"Sausage", "Egg", "Cheese"} == words)
-//}
+func TestStringsCanBeSplit(t *koans.T) {
+	str := "Sausage Egg Cheese"
+	words := strings.Split(str, " ", -1)
+	t.AssertEqualsStringSlices(koans.StringSlice__, words)
+}
+
+func TestStringsCanBeSplitWithDifferentPatterns(t *koans.T) {
+	import re #import python regular expression library
+
+	string = "the,rain;in,spain"
+	pattern = re.compile(',|;')
+
+	words = pattern.split(string)
+
+	self.assertEqual(["the","rain", "in", "spain"], words)
+}
 
