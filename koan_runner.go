@@ -29,12 +29,13 @@ var tests = []koans.Test {
 	{"about_strings.TestYouCanGetASingleCharacterFromAString", about_strings.TestYouCanGetASingleCharacterFromAString},
 	{"about_strings.TestCharactersAreBytesActually", about_strings.TestCharactersAreBytesActually},
 	{"about_strings.TestStringsCanBeSplit", about_strings.TestStringsCanBeSplit},
+	{"about_strings.TestStringsCanBeSplitWithDifferentPatterns", about_strings.TestStringsCanBeSplitWithDifferentPatterns},
 }
 
 var sampleTests = []koans.Test {
-	{"about_strings.TestStringsCanBeSplit", about_strings.TestStringsCanBeSplit},
+	{"about_strings.TestStringsCanBeSplitWithDifferentPatterns", about_strings.TestStringsCanBeSplitWithDifferentPatterns},
 }
 
 func main() {
-	koans.Main(sampleTests)
+	koans.Main(tests)
 }

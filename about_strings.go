@@ -67,13 +67,10 @@ func TestStringsCanBeSplit(t *koans.T) {
 }
 
 func TestStringsCanBeSplitWithDifferentPatterns(t *koans.T) {
-	import re #import python regular expression library
+	str := "the,|;rain;in,spain"
+	words := strings.Split(str, ",|;", -1)
 
-	string = "the,rain;in,spain"
-	pattern = re.compile(',|;')
 
-	words = pattern.split(string)
-
-	self.assertEqual(["the","rain", "in", "spain"], words)
+	t.AssertEqualsStringSlices(koans.StringSlice__, words)
 }
 
