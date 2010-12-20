@@ -7,6 +7,7 @@ var (
 	Int__ int = -10000
 	Intp__ *int = new(int)
 	String__ string = ""
+	Boolean__ bool = false
 	Char__ byte = '0'
 	StringSlice__ []string
 )

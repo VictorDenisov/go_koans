@@ -5,6 +5,7 @@ import "./about_nil"
 import "./about_arrays"
 import "./about_strings"
 import "./about_maps"
+import "./about_tuples"
 import "./koans"
 
 var tests = []koans.Test {
@@ -30,10 +31,13 @@ var tests = []koans.Test {
 	{"about_strings.TestCharactersAreBytesActually", about_strings.TestCharactersAreBytesActually},
 	{"about_strings.TestStringsCanBeSplit", about_strings.TestStringsCanBeSplit},
 	{"about_strings.TestStringsCanBeSplitWithDifferentPatterns", about_strings.TestStringsCanBeSplitWithDifferentPatterns},
+	{"about_tuples.TestTupleAssignment", about_tuples.TestTupleAssignment},
+	{"about_tuples.TestTupleAssignmentBlankIdentifier", about_tuples.TestTupleAssignmentBlankIdentifier},
+	{"about_tuples.TestSwapWithTuples", about_tuples.TestSwapWithTuples},
 }
 
 var sampleTests = []koans.Test {
-	{"about_strings.TestStringsCanBeSplitWithDifferentPatterns", about_strings.TestStringsCanBeSplitWithDifferentPatterns},
+	{"about_tuples.TestSwapWithTuples", about_tuples.TestSwapWithTuples},
 }
 
 func main() {

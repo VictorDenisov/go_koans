@@ -5,6 +5,7 @@ KOANSFILES=\
 	about_nil.go\
 	about_arrays.go\
 	about_strings.go\
+	about_tuples.go\
 	about_maps.go
 KOANSLIB=\
 	koans.go
