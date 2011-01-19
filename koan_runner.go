@@ -42,10 +42,14 @@ var tests = []koans.Test {
 	{"about_methods.TestFunctionWithMultipleReturnTypes", about_methods.TestFunctionWithMultipleReturnTypes},
 	{"about_methods.TestFunctionWithNamedReturnValues", about_methods.TestFunctionWithNamedReturnValues},
 	{"about_control_statements.TestIfThenElseStatements", about_control_statements.TestIfThenElseStatements},
+	{"about_control_statements.TestIfThenStatement", about_control_statements.TestIfThenStatement},
+	{"about_control_statements.TestWhileStatement", about_control_statements.TestWhileStatement},
+	{"about_control_statements.TestBreakStatement", about_control_statements.TestBreakStatement},
+	{"about_control_statements.TestContinueStatement", about_control_statements.TestContinueStatement},
 }
 
 var sampleTests = []koans.Test {
-	{"about_strings.TestBackQuotedStringsAreStrings", about_strings.TestBackQuotedStringsAreStrings},
+	{"about_control_statements.TestContinueStatement", about_control_statements.TestContinueStatement},
 }
 
 func main() {

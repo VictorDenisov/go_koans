@@ -1,6 +1,7 @@
 package about_control_statements
 
 import "./koans"
+import "fmt"
 
 func TestIfThenElseStatements(t *koans.T) {
 	var result string
@@ -19,4 +20,40 @@ func TestIfThenStatement(t *koans.T) {
 		result = "true value"
 	}
 	t.AssertTrue(koans.String__ == result)
+}
+
+func TestWhileStatement(t *koans.T) {
+	i := 1
+	result := 1
+	for i <= 10 {
+		result = result * i
+		i += 1
+	}
+	t.AssertEqualInt(koans.Int__, result)
+}
+
+func TestBreakStatement(t *koans.T) {
+	i := 1
+	result := 1
+	for {
+		if i > 10 {
+			break
+		}
+		result = result * i
+		i += 1
+	}
+	t.AssertEqualInt(koans.Int__, result)
+}
+
+func TestContinueStatement(t *koans.T) {
+	i := 0
+	result := make([]string, 0)
+	for i < 10 {
+		i += 1
+		if i % 2 == 0 {
+			continue
+		}
+		result = append(result, fmt.Sprintf("%d", i))
+	}
+	t.AssertEqualsStringSlices(koans.StringSlice__, result)
 }
