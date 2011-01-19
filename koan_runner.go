@@ -23,6 +23,7 @@ var tests = []koans.Test {
 	{"about_arrays.TestSlicingArrays", about_arrays.TestSlicingArrays},
 	{"about_maps.TestCreatingMap", about_maps.TestCreatingMap},
 	{"about_strings.TestDoubleQuotedStringsAreStrings", about_strings.TestDoubleQuotedStringsAreStrings},
+	{"about_strings.TestBackQuotedStringsAreStrings", about_strings.TestBackQuotedStringsAreStrings},
 	{"about_strings.TestPlusConcatenatesString", about_strings.TestPlusConcatenatesString},
 	{"about_strings.TestPlusWillNotModifyOriginalStrings", about_strings.TestPlusWillNotModifyOriginalStrings},
 	{"about_strings.TestPlusEqualsWillAppendToEndOfString", about_strings.TestPlusEqualsWillAppendToEndOfString},
@@ -44,7 +45,7 @@ var tests = []koans.Test {
 }
 
 var sampleTests = []koans.Test {
-	{"about_control_statements.TestIfThenElseStatements", about_control_statements.TestIfThenElseStatements},
+	{"about_strings.TestBackQuotedStringsAreStrings", about_strings.TestBackQuotedStringsAreStrings},
 }
 
 func main() {

@@ -10,6 +10,13 @@ func TestDoubleQuotedStringsAreStrings(t *koans.T) {
 	t.AssertTrue(koans.String__ == str)
 }
 
+func TestBackQuotedStringsAreStrings(t *koans.T) {
+	str := `hello\n
+world`
+
+	t.AssertTrue(koans.Int__ == len(str))
+}
+
 func TestPlusConcatenatesString(t *koans.T) {
 	str := "Hello " + "World"
 	t.AssertTrue(koans.String__ == str)
