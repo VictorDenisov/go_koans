@@ -12,3 +12,11 @@ func TestIfThenElseStatements(t *koans.T) {
 
 	t.AssertTrue(koans.String__ == result)
 }
+
+func TestIfThenStatement(t *koans.T) {
+	var result string = "default value"
+	if true {
+		result = "true value"
+	}
+	t.AssertTrue(koans.String__ == result)
+}
