@@ -37,10 +37,11 @@ var tests = []koans.Test {
 	{"about_tuples.TestSwapWithTuples", about_tuples.TestSwapWithTuples},
 	{"about_methods.TestEveryTypeCanHaveMethods", about_methods.TestEveryTypeCanHaveMethods},
 	{"about_methods.TestCallingAGlobalFunction", about_methods.TestCallingAGlobalFunction},
+	{"about_methods.TestFunctionWithMultipleReturnTypes", about_methods.TestFunctionWithMultipleReturnTypes},
 }
 
 var sampleTests = []koans.Test {
-	{"about_methods.TestCallingAGlobalFunction", about_methods.TestCallingAGlobalFunction},
+	{"about_methods.TestFunctionWithMultipleReturnTypes", about_methods.TestFunctionWithMultipleReturnTypes},
 }
 
 func main() {
