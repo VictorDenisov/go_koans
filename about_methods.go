@@ -16,6 +16,19 @@ func FunctionWithMultipleReturnTypes() (int, string) {
 	return 3, "hello"
 }
 
+func FunctionWithNamedReturnValues() (a int, b string) {
+	a = 4
+	b = "bye"
+	return
+}
+
+func TestFunctionWithNamedReturnValues(t *koans.T) {
+	intValue, stringValue := FunctionWithNamedReturnValues()
+
+	t.AssertEqualInt(koans.Int__, intValue)
+	t.AssertTrue(koans.String__ == stringValue)
+}
+
 func TestFunctionWithMultipleReturnTypes(t *koans.T) {
 	intValue, stringValue := FunctionWithMultipleReturnTypes()
 

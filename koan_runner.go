@@ -38,10 +38,11 @@ var tests = []koans.Test {
 	{"about_methods.TestEveryTypeCanHaveMethods", about_methods.TestEveryTypeCanHaveMethods},
 	{"about_methods.TestCallingAGlobalFunction", about_methods.TestCallingAGlobalFunction},
 	{"about_methods.TestFunctionWithMultipleReturnTypes", about_methods.TestFunctionWithMultipleReturnTypes},
+	{"about_methods.TestFunctionWithNamedReturnValues", about_methods.TestFunctionWithNamedReturnValues},
 }
 
 var sampleTests = []koans.Test {
-	{"about_methods.TestFunctionWithMultipleReturnTypes", about_methods.TestFunctionWithMultipleReturnTypes},
+	{"about_methods.TestFunctionWithNamedReturnValues", about_methods.TestFunctionWithNamedReturnValues},
 }
 
 func main() {
