@@ -6,6 +6,7 @@ import "./about_arrays"
 import "./about_strings"
 import "./about_maps"
 import "./about_tuples"
+import "./about_methods"
 import "./koans"
 
 var tests = []koans.Test {
@@ -34,10 +35,11 @@ var tests = []koans.Test {
 	{"about_tuples.TestTupleAssignment", about_tuples.TestTupleAssignment},
 	{"about_tuples.TestTupleAssignmentBlankIdentifier", about_tuples.TestTupleAssignmentBlankIdentifier},
 	{"about_tuples.TestSwapWithTuples", about_tuples.TestSwapWithTuples},
+	{"about_methods.TestEveryTypeCanHaveMethods", about_methods.TestEveryTypeCanHaveMethods},
 }
 
 var sampleTests = []koans.Test {
-	{"about_tuples.TestSwapWithTuples", about_tuples.TestSwapWithTuples},
+	{"about_methods.TestEveryTypeCanHaveMethods", about_methods.TestEveryTypeCanHaveMethods},
 }
 
 func main() {
