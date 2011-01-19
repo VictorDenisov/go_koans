@@ -7,6 +7,7 @@ import "./about_strings"
 import "./about_maps"
 import "./about_tuples"
 import "./about_methods"
+import "./about_control_statements"
 import "./koans"
 
 var tests = []koans.Test {
@@ -39,10 +40,11 @@ var tests = []koans.Test {
 	{"about_methods.TestCallingAGlobalFunction", about_methods.TestCallingAGlobalFunction},
 	{"about_methods.TestFunctionWithMultipleReturnTypes", about_methods.TestFunctionWithMultipleReturnTypes},
 	{"about_methods.TestFunctionWithNamedReturnValues", about_methods.TestFunctionWithNamedReturnValues},
+	{"about_control_statements.TestIfThenElseStatements", about_control_statements.TestIfThenElseStatements},
 }
 
 var sampleTests = []koans.Test {
-	{"about_methods.TestFunctionWithNamedReturnValues", about_methods.TestFunctionWithNamedReturnValues},
+	{"about_control_statements.TestIfThenElseStatements", about_control_statements.TestIfThenElseStatements},
 }
 
 func main() {
