@@ -46,10 +46,12 @@ var tests = []koans.Test {
 	{"about_control_statements.TestWhileStatement", about_control_statements.TestWhileStatement},
 	{"about_control_statements.TestBreakStatement", about_control_statements.TestBreakStatement},
 	{"about_control_statements.TestContinueStatement", about_control_statements.TestContinueStatement},
+	{"about_control_statements.TestForStatement", about_control_statements.TestForStatement},
+	{"about_control_statements.TestForEachStatement", about_control_statements.TestForEachStatement},
 }
 
 var sampleTests = []koans.Test {
-	{"about_control_statements.TestContinueStatement", about_control_statements.TestContinueStatement},
+	{"about_control_statements.TestForEachStatement", about_control_statements.TestForEachStatement},
 }
 
 func main() {

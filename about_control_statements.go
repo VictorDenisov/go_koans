@@ -57,3 +57,21 @@ func TestContinueStatement(t *koans.T) {
 	}
 	t.AssertEqualsStringSlices(koans.StringSlice__, result)
 }
+
+func TestForStatement(t *koans.T) {
+	result := 1
+	for i := 1; i <= 10; i++ {
+		result = result * i
+	}
+	t.AssertEqualInt(koans.Int__, result)
+}
+
+func TestForEachStatement(t *koans.T) {
+	list := []int{1, 2, 3, 4}
+	result := 0
+	for _, value := range list {
+		result += value
+	}
+	t.AssertEqualInt(10, result)
+}
+
