@@ -36,10 +36,11 @@ var tests = []koans.Test {
 	{"about_tuples.TestTupleAssignmentBlankIdentifier", about_tuples.TestTupleAssignmentBlankIdentifier},
 	{"about_tuples.TestSwapWithTuples", about_tuples.TestSwapWithTuples},
 	{"about_methods.TestEveryTypeCanHaveMethods", about_methods.TestEveryTypeCanHaveMethods},
+	{"about_methods.TestCallingAGlobalFunction", about_methods.TestCallingAGlobalFunction},
 }
 
 var sampleTests = []koans.Test {
-	{"about_methods.TestEveryTypeCanHaveMethods", about_methods.TestEveryTypeCanHaveMethods},
+	{"about_methods.TestCallingAGlobalFunction", about_methods.TestCallingAGlobalFunction},
 }
 
 func main() {
