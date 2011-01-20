@@ -8,6 +8,7 @@ import "./about_maps"
 import "./about_tuples"
 import "./about_methods"
 import "./about_control_statements"
+import "./about_triangle_project"
 import "./koans"
 
 var tests = []koans.Test {
@@ -48,10 +49,15 @@ var tests = []koans.Test {
 	{"about_control_statements.TestContinueStatement", about_control_statements.TestContinueStatement},
 	{"about_control_statements.TestForStatement", about_control_statements.TestForStatement},
 	{"about_control_statements.TestForEachStatement", about_control_statements.TestForEachStatement},
+	{"about_triangle_project.TestEquilateralTrianglesHaveEqualSides", about_triangle_project.TestEquilateralTrianglesHaveEqualSides},
+	{"about_triangle_project.TestIsoscelesTrianglesHaveExactlyTwoSidesEqual", about_triangle_project.TestIsoscelesTrianglesHaveExactlyTwoSidesEqual},
+	{"about_triangle_project.TestScaleneTrianglesHaveNoEqualSides", about_triangle_project.TestScaleneTrianglesHaveNoEqualSides},
 }
 
 var sampleTests = []koans.Test {
-	{"about_control_statements.TestForEachStatement", about_control_statements.TestForEachStatement},
+	{"about_triangle_project.TestEquilateralTrianglesHaveEqualSides", about_triangle_project.TestEquilateralTrianglesHaveEqualSides},
+	{"about_triangle_project.TestIsoscelesTrianglesHaveExactlyTwoSidesEqual", about_triangle_project.TestIsoscelesTrianglesHaveExactlyTwoSidesEqual},
+	{"about_triangle_project.TestScaleneTrianglesHaveNoEqualSides", about_triangle_project.TestScaleneTrianglesHaveNoEqualSides},
 }
 
 func main() {

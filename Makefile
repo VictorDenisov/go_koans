@@ -8,17 +8,22 @@ KOANSFILES=\
 	about_tuples.go\
 	about_methods.go\
 	about_control_statements.go\
+	about_triangle_project.go\
+	triangle.go\
 	about_maps.go
 KOANSLIB=\
 	koans.go
 SOURCES=$(KOANSLIB) $(KOANSFILES) $(RUNNERFILES)
 OBJECTS=$(SOURCES:.go=.8)
 
+
 %.8:%.go
 	8g $<
 
 all: koan_runner
 	./koan_runner
+
+about_triangle_project.8: triangle.8
 
 koan_runner: $(OBJECTS)
 	8l -o koan_runner koan_runner.8
