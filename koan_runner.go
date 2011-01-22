@@ -58,11 +58,15 @@ var tests = []koans.Test {
 	{"about_triangle_project2.TestIllegalTrianglesReturnErrors", about_triangle_project2.TestIllegalTrianglesReturnErrors},
 	{"about_closures.TestClosuresCanBeAssignedToVariablesAndCalledExplicitly",
 	about_closures.TestClosuresCanBeAssignedToVariablesAndCalledExplicitly},
+	{"about_closures.TestAccessingClosureViaAssignment",
+	about_closures.TestAccessingClosureViaAssignment},
+	{"about_closures.TestAccessingClosureWithoutAssignment",
+	about_closures.TestAccessingClosureWithoutAssignment},
 }
 
 var sampleTests = []koans.Test {
-	{"about_closures.TestClosuresCanBeAssignedToVariablesAndCalledExplicitly",
-	about_closures.TestClosuresCanBeAssignedToVariablesAndCalledExplicitly},
+	{"about_closures.TestAccessingClosureWithoutAssignment",
+	about_closures.TestAccessingClosureWithoutAssignment},
 }
 
 func main() {
