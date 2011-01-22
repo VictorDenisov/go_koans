@@ -10,6 +10,7 @@ import "./about_methods"
 import "./about_control_statements"
 import "./about_triangle_project"
 import "./about_triangle_project2"
+import "./about_closures"
 import "./koans"
 
 var tests = []koans.Test {
@@ -55,12 +56,13 @@ var tests = []koans.Test {
 	about_triangle_project.TestIsoscelesTrianglesHaveExactlyTwoSidesEqual},
 	{"about_triangle_project.TestScaleneTrianglesHaveNoEqualSides", about_triangle_project.TestScaleneTrianglesHaveNoEqualSides},
 	{"about_triangle_project2.TestIllegalTrianglesReturnErrors", about_triangle_project2.TestIllegalTrianglesReturnErrors},
+	{"about_closures.TestClosuresCanBeAssignedToVariablesAndCalledExplicitly",
+	about_closures.TestClosuresCanBeAssignedToVariablesAndCalledExplicitly},
 }
 
 var sampleTests = []koans.Test {
-	{"about_triangle_project.TestEquilateralTrianglesHaveEqualSides", about_triangle_project.TestEquilateralTrianglesHaveEqualSides},
-	{"about_triangle_project.TestIsoscelesTrianglesHaveExactlyTwoSidesEqual", about_triangle_project.TestIsoscelesTrianglesHaveExactlyTwoSidesEqual},
-	{"about_triangle_project.TestScaleneTrianglesHaveNoEqualSides", about_triangle_project.TestScaleneTrianglesHaveNoEqualSides},
+	{"about_closures.TestClosuresCanBeAssignedToVariablesAndCalledExplicitly",
+	about_closures.TestClosuresCanBeAssignedToVariablesAndCalledExplicitly},
 }
 
 func main() {

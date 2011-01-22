@@ -11,6 +11,7 @@ KOANSFILES=\
 	about_triangle_project.go\
 	about_triangle_project2.go\
 	triangle.go\
+	about_closures.go\
 	about_maps.go
 KOANSLIB=\
 	koans.go
