@@ -9,6 +9,7 @@ KOANSFILES=\
 	about_methods.go\
 	about_control_statements.go\
 	about_triangle_project.go\
+	about_triangle_project2.go\
 	triangle.go\
 	about_maps.go
 KOANSLIB=\

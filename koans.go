@@ -32,6 +32,15 @@ func (t *T) AssertTrue(value bool) {
 	}
 }
 
+func (t *T) AssertEquals(a, b interface{}) {
+	switch v := a.(type) {
+		case int:
+			t.AssertTrue(v == b.(int))
+		case string:
+			t.AssertTrue(v == b.(string))
+	}
+}
+
 func (t *T) AssertEqualInt(expected int, received int) {
 	if expected != received {
 		t.FailNow()
