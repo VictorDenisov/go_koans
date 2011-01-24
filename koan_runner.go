@@ -11,6 +11,7 @@ import "./about_control_statements"
 import "./about_triangle_project"
 import "./about_triangle_project2"
 import "./about_closures"
+import "./about_scoring_project"
 import "./koans"
 
 var tests = []koans.Test {
@@ -62,13 +63,15 @@ var tests = []koans.Test {
 	about_closures.TestAccessingClosureViaAssignment},
 	{"about_closures.TestAccessingClosureWithoutAssignment",
 	about_closures.TestAccessingClosureWithoutAssignment},
+	{"about_scoring_project.TestScoreOfAnEmptyListIsZero",
+	about_scoring_project.TestScoreOfAnEmptyListIsZero},
 }
 
 var sampleTests = []koans.Test {
-	{"about_closures.TestAccessingClosureWithoutAssignment",
-	about_closures.TestAccessingClosureWithoutAssignment},
+	{"about_scoring_project.TestScoreOfASingleRollOf_5_Is_50",
+	about_scoring_project.TestScoreOfASingleRollOf_5_Is_50},
 }
 
 func main() {
-	koans.Main(tests)
+	koans.Main(sampleTests)
 }
