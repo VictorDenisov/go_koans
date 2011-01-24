@@ -8,6 +8,7 @@ KOANSFILES=\
 	about_tuples.go\
 	about_methods.go\
 	about_control_statements.go\
+	about_scoring_project.go\
 	about_triangle_project.go\
 	about_triangle_project2.go\
 	triangle.go\
