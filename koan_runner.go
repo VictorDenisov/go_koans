@@ -65,13 +65,27 @@ var tests = []koans.Test {
 	about_closures.TestAccessingClosureWithoutAssignment},
 	{"about_scoring_project.TestScoreOfAnEmptyListIsZero",
 	about_scoring_project.TestScoreOfAnEmptyListIsZero},
+	{"about_scoring_project.TestScoreOfASingleRollOf_5_Is_50",
+	about_scoring_project.TestScoreOfASingleRollOf_5_Is_50},
+	{"about_scoring_project.TestScoreOfASingleRollOf_1_Is_100",
+	about_scoring_project.TestScoreOfASingleRollOf_1_Is_100},
+	{"about_scoring_project.TestScoreOfMultiple_1sAnd_5sIsTheSumOfIndividualScores",
+	about_scoring_project.TestScoreOfMultiple_1sAnd_5sIsTheSumOfIndividualScores},
+	{"about_scoring_project.TestScoreOfSingle_2s_3s_4s_And_6s_AreZero",
+	about_scoring_project.TestScoreOfSingle_2s_3s_4s_And_6s_AreZero},
+	{"about_scoring_project.TestScoreOfTriple_1_Is_1000",
+	about_scoring_project.TestScoreOfTriple_1_Is_1000},
+	{"about_scoring_project.TestScoreOfOtherTriplesIs_100x",
+	about_scoring_project.TestScoreOfOtherTriplesIs_100x},
+	{"about_scoring_project.TestScoreOfMixedIsSum",
+	about_scoring_project.TestScoreOfMixedIsSum},
 }
 
 var sampleTests = []koans.Test {
-	{"about_scoring_project.TestScoreOfASingleRollOf_5_Is_50",
-	about_scoring_project.TestScoreOfASingleRollOf_5_Is_50},
+	{"about_scoring_project.TestScoreOfMixedIsSum",
+	about_scoring_project.TestScoreOfMixedIsSum},
 }
 
 func main() {
-	koans.Main(sampleTests)
+	koans.Main(tests)
 }

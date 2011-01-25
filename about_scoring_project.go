@@ -33,7 +33,7 @@ More scoring examples are given in the tests below:
 Your goal is to write the score method.
 */
 
-func score(dice []int) int {
+func score(diceArg []int) int {
 	//You need to write this method
 	return -1;
 }
@@ -43,7 +43,7 @@ func TestScoreOfAnEmptyListIsZero(t *koans.T) {
 }
 
 func TestScoreOfASingleRollOf_5_Is_50(t *koans.T) {
-	t.AssertEquals(5, score([]int{5}))
+	t.AssertEquals(50, score([]int{5}))
 }
 
 func TestScoreOfASingleRollOf_1_Is_100(t *koans.T) {
