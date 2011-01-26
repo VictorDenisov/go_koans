@@ -89,11 +89,13 @@ var tests = []koans.Test {
 	about_structs.TestAnyoneCanAccessField},
 	{"about_dice_project.TestCanCreateADiceSet",
 	about_dice_project.TestCanCreateADiceSet},
+	{"about_dice_project.TestRollingTheDiceReturnsASetOfIntegersBetween_1_And_6",
+	about_dice_project.TestRollingTheDiceReturnsASetOfIntegersBetween_1_And_6},
 }
 
 var sampleTests = []koans.Test {
-	{"about_dice_project.TestCanCreateADiceSet",
-	about_dice_project.TestCanCreateADiceSet},
+	{"about_dice_project.TestRollingTheDiceReturnsASetOfIntegersBetween_1_And_6",
+	about_dice_project.TestRollingTheDiceReturnsASetOfIntegersBetween_1_And_6},
 }
 
 func main() {
