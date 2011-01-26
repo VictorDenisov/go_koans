@@ -80,11 +80,15 @@ var tests = []koans.Test {
 	about_scoring_project.TestScoreOfOtherTriplesIs_100x},
 	{"about_scoring_project.TestScoreOfMixedIsSum",
 	about_scoring_project.TestScoreOfMixedIsSum},
+	{"about_structs.TestInstancesOfStructsCanBeGeneratedWithFigureBrackets",
+	about_structs.TestInstancesOfStructsCanBeGeneratedWithFigureBrackets},
+	{"about_structs.TestConstructorIsJustASeparateFunction",
+	about_structs.TestConstructorIsJustASeparateFunction},
 }
 
 var sampleTests = []koans.Test {
-	{"about_structs.TestInstancesOfStructsCanBeGeneratedWithFigureBrackets",
-	about_structs.TestInstancesOfStructsCanBeGeneratedWithFigureBrackets},
+	{"about_structs.TestConstructorIsJustASeparateFunction",
+	about_structs.TestConstructorIsJustASeparateFunction},
 }
 
 func main() {
