@@ -13,6 +13,7 @@ import "./about_triangle_project2"
 import "./about_closures"
 import "./about_structs"
 import "./about_scoring_project"
+import "./about_dice_project"
 import "./koans"
 
 var tests = []koans.Test {
@@ -86,13 +87,15 @@ var tests = []koans.Test {
 	about_structs.TestConstructorIsJustASeparateFunction},
 	{"about_structs.TestAnyoneCanAccessField",
 	about_structs.TestAnyoneCanAccessField},
+	{"about_dice_project.TestCanCreateADiceSet",
+	about_dice_project.TestCanCreateADiceSet},
 }
 
 var sampleTests = []koans.Test {
-	{"about_structs.TestAnyoneCanAccessField",
-	about_structs.TestAnyoneCanAccessField},
+	{"about_dice_project.TestCanCreateADiceSet",
+	about_dice_project.TestCanCreateADiceSet},
 }
 
 func main() {
-	koans.Main(sampleTests)
+	koans.Main(tests)
 }

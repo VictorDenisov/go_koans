@@ -12,6 +12,7 @@ KOANSFILES=\
 	about_triangle_project.go\
 	about_triangle_project2.go\
 	about_structs.go\
+	about_dice_project.go\
 	triangle.go\
 	about_closures.go\
 	about_maps.go
