@@ -11,6 +11,7 @@ import "./about_control_statements"
 import "./about_triangle_project"
 import "./about_triangle_project2"
 import "./about_closures"
+import "./about_structs"
 import "./about_scoring_project"
 import "./koans"
 
@@ -82,10 +83,10 @@ var tests = []koans.Test {
 }
 
 var sampleTests = []koans.Test {
-	{"about_scoring_project.TestScoreOfMixedIsSum",
-	about_scoring_project.TestScoreOfMixedIsSum},
+	{"about_structs.TestInstancesOfStructsCanBeGeneratedWithFigureBrackets",
+	about_structs.TestInstancesOfStructsCanBeGeneratedWithFigureBrackets},
 }
 
 func main() {
-	koans.Main(tests)
+	koans.Main(sampleTests)
 }
