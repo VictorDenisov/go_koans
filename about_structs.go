@@ -28,4 +28,7 @@ func TestConstructorIsJustASeparateFunction(t *koans.T) {
 	t.AssertEquals(koans.String__, dog.name)
 }
 
-func Test
+func TestAnyoneCanAccessField(t *koans.T) {
+	dog := &Dog2{"Fido"}
+	t.AssertEquals(koans.String__, dog.name)
+}

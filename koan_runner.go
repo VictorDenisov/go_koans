@@ -84,11 +84,13 @@ var tests = []koans.Test {
 	about_structs.TestInstancesOfStructsCanBeGeneratedWithFigureBrackets},
 	{"about_structs.TestConstructorIsJustASeparateFunction",
 	about_structs.TestConstructorIsJustASeparateFunction},
+	{"about_structs.TestAnyoneCanAccessField",
+	about_structs.TestAnyoneCanAccessField},
 }
 
 var sampleTests = []koans.Test {
-	{"about_structs.TestConstructorIsJustASeparateFunction",
-	about_structs.TestConstructorIsJustASeparateFunction},
+	{"about_structs.TestAnyoneCanAccessField",
+	about_structs.TestAnyoneCanAccessField},
 }
 
 func main() {
