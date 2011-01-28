@@ -91,11 +91,13 @@ var tests = []koans.Test {
 	about_dice_project.TestCanCreateADiceSet},
 	{"about_dice_project.TestRollingTheDiceReturnsASetOfIntegersBetween_1_And_6",
 	about_dice_project.TestRollingTheDiceReturnsASetOfIntegersBetween_1_And_6},
+	{"about_dice_project.TestDiceValuesDoNotChangeUnlessExplicitlyRolled",
+	about_dice_project.TestDiceValuesDoNotChangeUnlessExplicitlyRolled},
 }
 
 var sampleTests = []koans.Test {
-	{"about_dice_project.TestRollingTheDiceReturnsASetOfIntegersBetween_1_And_6",
-	about_dice_project.TestRollingTheDiceReturnsASetOfIntegersBetween_1_And_6},
+	{"about_dice_project.TestDiceValuesDoNotChangeUnlessExplicitlyRolled",
+	about_dice_project.TestDiceValuesDoNotChangeUnlessExplicitlyRolled},
 }
 
 func main() {

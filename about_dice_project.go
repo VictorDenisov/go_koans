@@ -24,3 +24,12 @@ func TestRollingTheDiceReturnsASetOfIntegersBetween_1_And_6(t *koans.T) {
 		t.AssertTrue(1 <= value && value <= 6)
 	}
 }
+
+func TestDiceValuesDoNotChangeUnlessExplicitlyRolled(t *koans.T) {
+	dice := &DiceSet{}
+	dice.roll(5)
+	first_time := dice.values
+	second_time := dice.values
+	t.AssertEquals(5, len(first_time))
+	t.AssertEquals(first_time, second_time)
+}

@@ -34,6 +34,14 @@ func (t *T) AssertTrue(value bool) {
 
 func (t *T) AssertEquals(a, b interface{}) {
 	switch v := a.(type) {
+		case []int:
+			n := len(v)
+			w := b.([]int)
+			m := len(w)
+			t.AssertTrue(n == m)
+			for i := 0; i < n; i++ {
+				t.AssertTrue(v[i] == w[i])
+			}
 		case int:
 			t.AssertTrue(v == b.(int))
 		case string:
