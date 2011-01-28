@@ -49,6 +49,25 @@ func (t *T) AssertEquals(a, b interface{}) {
 	}
 }
 
+func (t *T) AssertNotEqual(a, b interface{}) {
+	switch v := a.(type) {
+		case []int:
+			equal := true
+			n := len(v)
+			w := b.([]int)
+			m := len(w)
+			equal = equal && (n == m)
+			for i := 0; i < n; i++ {
+				equal = equal && (v[i] == w[i])
+			}
+			t.AssertTrue(!equal)
+		case int:
+			t.AssertTrue(v != b.(int))
+		case string:
+			t.AssertTrue(v != b.(string))
+	}
+}
+
 func (t *T) AssertEqualInt(expected int, received int) {
 	if expected != received {
 		t.FailNow()

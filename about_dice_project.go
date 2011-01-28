@@ -33,3 +33,25 @@ func TestDiceValuesDoNotChangeUnlessExplicitlyRolled(t *koans.T) {
 	t.AssertEquals(5, len(first_time))
 	t.AssertEquals(first_time, second_time)
 }
+
+func TestDiceValuesShouldChangeBetweenRolls(t *koans.T) {
+	dice := &DiceSet{}
+
+	dice.roll(5)
+	first_time := dice.values
+
+	dice.roll(5)
+	second_time := dice.values
+
+	t.AssertNotEqual(first_time, second_time)
+}
+
+func TestYouCanRollDifferentNumbersOfDice(t *koans.T) {
+	dice := &DiceSet{}
+
+	dice.roll(3)
+	t.AssertEquals(3, len(dice.values))
+
+	dice.roll(1)
+	t.AssertEquals(1, len(dice.values))
+}

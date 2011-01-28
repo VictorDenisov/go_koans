@@ -33,7 +33,8 @@ var tests = []koans.Test {
 	{"about_strings.TestPlusConcatenatesString", about_strings.TestPlusConcatenatesString},
 	{"about_strings.TestPlusWillNotModifyOriginalStrings", about_strings.TestPlusWillNotModifyOriginalStrings},
 	{"about_strings.TestPlusEqualsWillAppendToEndOfString", about_strings.TestPlusEqualsWillAppendToEndOfString},
-	{"about_strings.TestPlusEqualsAlsoLeavesOriginalStringUnmodified", about_strings.TestPlusEqualsAlsoLeavesOriginalStringUnmodified},
+	{"about_strings.TestPlusEqualsAlsoLeavesOriginalStringUnmodified",
+	about_strings.TestPlusEqualsAlsoLeavesOriginalStringUnmodified},
 	{"about_strings.TestUseSprintfToInterpolateVaribales", about_strings.TestUseSprintfToInterpolateVaribales},
 	{"about_strings.TestYouCanGetASubstringFromAString", about_strings.TestYouCanGetASubstringFromAString},
 	{"about_strings.TestYouCanGetASingleCharacterFromAString", about_strings.TestYouCanGetASingleCharacterFromAString},
@@ -93,6 +94,10 @@ var tests = []koans.Test {
 	about_dice_project.TestRollingTheDiceReturnsASetOfIntegersBetween_1_And_6},
 	{"about_dice_project.TestDiceValuesDoNotChangeUnlessExplicitlyRolled",
 	about_dice_project.TestDiceValuesDoNotChangeUnlessExplicitlyRolled},
+	{"about_dice_project.TestDiceValuesShouldChangeBetweenRolls",
+	about_dice_project.TestDiceValuesShouldChangeBetweenRolls},
+	{"about_dice_project.TestYouCanRollDifferentNumbersOfDice",
+	about_dice_project.TestYouCanRollDifferentNumbersOfDice},
 }
 
 var sampleTests = []koans.Test {
@@ -101,5 +106,5 @@ var sampleTests = []koans.Test {
 }
 
 func main() {
-	koans.Main(tests)
+	koans.Main(sampleTests)
 }
