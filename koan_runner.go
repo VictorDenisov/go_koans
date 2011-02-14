@@ -14,6 +14,7 @@ import "./about_closures"
 import "./about_structs"
 import "./about_scoring_project"
 import "./about_dice_project"
+import "./about_channels"
 import "./koans"
 
 var tests = []koans.Test {
@@ -101,8 +102,8 @@ var tests = []koans.Test {
 }
 
 var sampleTests = []koans.Test {
-	{"about_dice_project.TestDiceValuesDoNotChangeUnlessExplicitlyRolled",
-	about_dice_project.TestDiceValuesDoNotChangeUnlessExplicitlyRolled},
+	{"about_channels.TestEveryChannelReceiveValue",
+	about_channels.TestEveryChannelReceiveValue},
 }
 
 func main() {

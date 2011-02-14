@@ -15,6 +15,7 @@ KOANSFILES=\
 	about_dice_project.go\
 	triangle.go\
 	about_closures.go\
+	about_channels.go\
 	about_maps.go
 KOANSLIB=\
 	koans.go
