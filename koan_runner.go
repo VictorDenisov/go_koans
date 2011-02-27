@@ -15,6 +15,7 @@ import "./about_structs"
 import "./about_scoring_project"
 import "./about_dice_project"
 import "./about_channels"
+import "./about_interfaces"
 import "./koans"
 
 var tests = []koans.Test {
@@ -101,11 +102,13 @@ var tests = []koans.Test {
 	about_dice_project.TestYouCanRollDifferentNumbersOfDice},
 	{"about_channels.TestEveryChannelReceiveValue",
 	about_channels.TestEveryChannelReceiveValue},
+	{"about_interfaces.TestAnyStructWithRequiredMethodsSatisfiesInterface",
+	about_interfaces.TestAnyStructWithRequiredMethodsSatisfiesInterface},
 }
 
 var sampleTests = []koans.Test {
-	{"about_channels.TestEveryChannelReceiveValue",
-	about_channels.TestEveryChannelReceiveValue},
+	{"about_interfaces.TestAnyStructWithRequiredMethodsSatisfiesInterface",
+	about_interfaces.TestAnyStructWithRequiredMethodsSatisfiesInterface},
 }
 
 func main() {
