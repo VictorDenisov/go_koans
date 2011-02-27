@@ -99,6 +99,8 @@ var tests = []koans.Test {
 	about_dice_project.TestDiceValuesShouldChangeBetweenRolls},
 	{"about_dice_project.TestYouCanRollDifferentNumbersOfDice",
 	about_dice_project.TestYouCanRollDifferentNumbersOfDice},
+	{"about_channels.TestEveryChannelReceiveValue",
+	about_channels.TestEveryChannelReceiveValue},
 }
 
 var sampleTests = []koans.Test {
@@ -107,5 +109,5 @@ var sampleTests = []koans.Test {
 }
 
 func main() {
-	koans.Main(sampleTests)
+	koans.Main(tests)
 }

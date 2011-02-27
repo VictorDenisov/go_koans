@@ -1,33 +1,31 @@
 package about_channels
 
 import "./koans"
-import "fmt"
 
 func TestEveryChannelReceiveValue(t *koans.T) {
+	count := 0
 	ch := make(chan int, 100)
 	wh := make(chan int)
 	go func () {
-		for {
+		loop: for {
 			select {
-			case value := <-ch:
-				fmt.Printf("Thread 1 : %v\n", value)
+			case <-ch:
+				count++
 			default:
-				break
+				break loop
 			}
 		}
-		fmt.Printf("Thread 1 : exit\n")
 		wh <- 1
 	}()
 	go func () {
-		for {
+		loop: for {
 			select {
-			case value := <-ch:
-				fmt.Printf("Thread 2 : %v\n", value)
+			case <-ch:
+				count++
 			default:
-				break
+				break loop
 			}
 		}
-		fmt.Printf("Thread 2 : exit\n")
 		wh <- 2
 	}()
 	for i := 0; i < 100; i++ {
@@ -35,5 +33,6 @@ func TestEveryChannelReceiveValue(t *koans.T) {
 	}
 	<-wh
 	<-wh
+	t.AssertEquals(koans.Int__, count)
 
 }
