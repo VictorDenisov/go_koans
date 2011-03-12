@@ -26,16 +26,16 @@ func TestPlusWillNotModifyOriginalStrings(t *koans.T) {
     hi := "Hello, "
 	there := "world"
 	str := hi + there
-	t.AssertTrue(koans.String__ == hi)
-	t.AssertTrue(koans.String__ == there)
-	t.AssertTrue(koans.String__ == str)
+	t.AssertEquals(koans.String__, hi)
+	t.AssertEquals(koans.String__, there)
+	t.AssertEquals(koans.String__, str)
 }
 
 func TestPlusEqualsWillAppendToEndOfString(t *koans.T) {
 	hi := "Hello, "
 	there := "world"
 	hi += there
-	t.AssertTrue(koans.String__ == hi)
+	t.AssertEquals(koans.String__, hi)
 }
 
 func TestPlusEqualsAlsoLeavesOriginalStringUnmodified(t *koans.T) {
@@ -43,19 +43,19 @@ func TestPlusEqualsAlsoLeavesOriginalStringUnmodified(t *koans.T) {
 	hi := original
 	there := "world"
 	hi += there
-	t.AssertTrue(koans.String__ == original)
+	t.AssertEquals(koans.String__, original)
 }
 
 func TestUseSprintfToInterpolateVaribales(t *koans.T) {
 	value1 := "one"
 	value2 := 2
 	str := fmt.Sprintf("The values are %s and %d", value1, value2)
-	t.AssertTrue(koans.String__ == str)
+	t.AssertEquals(koans.String__, str)
 }
 
 func TestYouCanGetASubstringFromAString(t *koans.T) {
 	str := "Bacon, lettuce and tomato"
-	t.AssertTrue(koans.String__ == str[7:10])
+	t.AssertEquals(koans.String__, str[7:10])
 }
 
 func TestYouCanGetASingleCharacterFromAString(t *koans.T) {
