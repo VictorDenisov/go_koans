@@ -13,8 +13,3 @@ func TestCreatingMap(t *koans.T) {
 	t.AssertTrue(koans.Int__ == len(timeZone))
 	t.AssertTrue(koans.Int__ == timeZone["UTC"])
 }
-
-func TestMapIsReferenceType(t *koans.T) {
-	var array [10]int
-	t.AssertTrue(koans.Int__ == len(array)) //Length of array is part of its type.
-}
