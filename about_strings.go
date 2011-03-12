@@ -19,7 +19,7 @@ world`
 
 func TestPlusConcatenatesString(t *koans.T) {
 	str := "Hello " + "World"
-	t.AssertTrue(koans.String__ == str)
+	t.AssertEquals(koans.String__, str)
 }
 
 func TestPlusWillNotModifyOriginalStrings(t *koans.T) {
