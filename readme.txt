@@ -1,7 +1,7 @@
-Change GOROOT variable in Makefile to make 
-it point to you go installation.
+Use the following command to run the koans.
 
-Then run 
+# make
 
-# make test
+Replace the following marks koans.Int__, koans.String__
+with correct values.
 
