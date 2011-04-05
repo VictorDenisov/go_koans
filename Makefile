@@ -17,6 +17,7 @@ KOANSFILES=\
 	about_closures.go\
 	about_channels.go\
 	about_interfaces.go\
+	about_embedding.go\
 	about_maps.go
 KOANSLIB=\
 	koans.go

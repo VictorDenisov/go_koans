@@ -16,6 +16,7 @@ import "./about_scoring_project"
 import "./about_dice_project"
 import "./about_channels"
 import "./about_interfaces"
+import "./about_embedding"
 import "./koans"
 
 var tests = []koans.Test {
@@ -104,11 +105,15 @@ var tests = []koans.Test {
 	about_channels.TestEveryChannelReceiveValue},
 	{"about_interfaces.TestAnyStructWithRequiredMethodsSatisfiesInterface",
 	about_interfaces.TestAnyStructWithRequiredMethodsSatisfiesInterface},
+	{"about_embedding.TestEmbeddingInterface",
+	about_embedding.TestEmbeddingInterface},
+	{"about_embedding.TestEmbeddingStruct",
+	about_embedding.TestEmbeddingStruct},
 }
 
 var sampleTests = []koans.Test {
-	{"about_interfaces.TestAnyStructWithRequiredMethodsSatisfiesInterface",
-	about_interfaces.TestAnyStructWithRequiredMethodsSatisfiesInterface},
+	{"about_embedding.TestEmbeddingStruct",
+	about_embedding.TestEmbeddingStruct},
 }
 
 func main() {
