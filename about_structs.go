@@ -8,7 +8,7 @@ type Dog struct {
 
 func TestInstancesOfStructsCanBeGeneratedWithFigureBrackets(t *koans.T) {
 	fido := Dog{}
-	t.AssertEquals(koans.String__, reflect.Typeof(fido).Name())
+	t.AssertEquals(koans.String__, reflect.TypeOf(fido).Name())
 }
 
 type Dog2 struct {
