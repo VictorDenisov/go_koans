@@ -47,12 +47,12 @@ func (t *ABimpl) getB() string {
 
 func TestEmbeddingInterface(t *koans.T) {
 	var ab AB = &ABimpl{}
-	t.AssertEquals("A", ab.getA())
-	t.AssertEquals("B", ab.getB())
+	t.AssertEquals(koans.String__, ab.getA())
+	t.AssertEquals(koans.String__, ab.getB())
 }
 
 func TestEmbeddingStruct(t *koans.T) {
 	ab := &ABembed{}
-	t.AssertEquals("Aimpl", ab.getA())
-	t.AssertEquals("Bimpl", ab.getB())
+	t.AssertEquals(koans.String__, ab.getA())
+	t.AssertEquals(koans.String__, ab.getB())
 }
