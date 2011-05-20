@@ -72,6 +72,6 @@ func TestForEachStatement(t *koans.T) {
 	for _, value := range list {
 		result += value
 	}
-	t.AssertEqualInt(10, result)
+	t.AssertEqualInt(koans.Int__, result)
 }
 
