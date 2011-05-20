@@ -1,3 +1,5 @@
+include $(GOROOT)/src/Make.inc
+
 RUNNERFILES=\
 	koan_runner.go
 KOANSFILES=\
@@ -22,21 +24,20 @@ KOANSFILES=\
 KOANSLIB=\
 	koans.go
 SOURCES=$(KOANSLIB) $(KOANSFILES) $(RUNNERFILES)
-OBJECTS=$(SOURCES:.go=.8)
+OBJECTS=$(SOURCES:.go=.${O})
 
 
-%.8:%.go
-	8g $<
+%.${O}:%.go
+	${O}g $<
 
 all: koan_runner
 	./koan_runner
 
-about_triangle_project.8: triangle.8
+about_triangle_project.${O}: triangle.${O}
 
 koan_runner: $(OBJECTS)
-	8l -o koan_runner koan_runner.8
+	${O}l -o koan_runner koan_runner.${O}
 
 clean:
 	rm -f $(OBJECTS)
-	
 
