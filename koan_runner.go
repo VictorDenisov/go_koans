@@ -51,6 +51,7 @@ var tests = []koans.Test {
 	{"about_methods.TestCallingAGlobalFunction", about_methods.TestCallingAGlobalFunction},
 	{"about_methods.TestFunctionWithMultipleReturnTypes", about_methods.TestFunctionWithMultipleReturnTypes},
 	{"about_methods.TestFunctionWithNamedReturnValues", about_methods.TestFunctionWithNamedReturnValues},
+	{"about_methods.TestInterfaces", about_methods.TestInterfaces},
 	{"about_control_statements.TestIfThenElseStatements", about_control_statements.TestIfThenElseStatements},
 	{"about_control_statements.TestIfThenStatement", about_control_statements.TestIfThenStatement},
 	{"about_control_statements.TestWhileStatement", about_control_statements.TestWhileStatement},
@@ -112,8 +113,7 @@ var tests = []koans.Test {
 }
 
 var sampleTests = []koans.Test {
-	{"about_embedding.TestEmbeddingStruct",
-	about_embedding.TestEmbeddingStruct},
+	{"about_methods.TestInterfaces", about_methods.TestInterfaces},
 }
 
 func main() {

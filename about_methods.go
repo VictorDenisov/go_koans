@@ -47,3 +47,25 @@ func TestEveryTypeCanHaveMethods(t *koans.T) {
 	t.AssertEqualInt(koans.Int__, int(result))
 }
 
+type Interface interface {
+	ReturnValue() int
+}
+
+type Implementation struct {
+}
+
+// The declaration of this function makes
+// only pointer to Implementation satisfy Interface.
+func (t *Implementation) ReturnValue () int {
+	return 1
+}
+
+func TestInterfaces(t *koans.T) {
+	var i Interface
+	v := Implementation{}
+	i = &v //Only pointer to Implementation satisfies Interface.
+	value := i.ReturnValue()
+
+	t.AssertEquals(2, value)
+}
+
