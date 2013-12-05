@@ -1,8 +1,7 @@
-package about_maps
+package main
 
-import "./koans"
 
-func TestCreatingMap(t *koans.T) {
+func TestCreatingMap(t *T) {
 	var timeZone = map[string]int{
 		"UTC": 0 * 60 * 60,
 		"EST": -5 * 60 * 60,
@@ -10,6 +9,6 @@ func TestCreatingMap(t *koans.T) {
 		"MST": -7 * 60 * 60,
 		"PST": -8 * 60 * 60,
 	}
-	t.AssertTrue(koans.Int__ == len(timeZone))
-	t.AssertTrue(koans.Int__ == timeZone["UTC"])
+	t.AssertTrue(Int__ == len(timeZone))
+	t.AssertTrue(Int__ == timeZone["UTC"])
 }

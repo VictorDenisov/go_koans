@@ -1,6 +1,5 @@
-package about_interfaces
+package main
 
-import "./koans"
 
 type Hellower interface {
 	Hello() string
@@ -12,7 +11,7 @@ func (t HellowerImpl) Hello() string {
 	return "Hello " + string(t)
 }
 
-func TestAnyStructWithRequiredMethodsSatisfiesInterface(t *koans.T) {
+func TestAnyStructWithRequiredMethodsSatisfiesInterface(t *T) {
 	s := HellowerImpl("world").Hello()
-	t.AssertEquals(koans.String__, s)
+	t.AssertEquals(String__, s)
 }

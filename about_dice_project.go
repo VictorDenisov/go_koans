@@ -1,6 +1,5 @@
-package about_dice_project
+package main
 
-import "./koans"
 
 type DiceSet struct {
 	values []int
@@ -11,12 +10,12 @@ func (t *DiceSet) roll(n int) {
 	//Tip: rand.Int
 }
 
-func TestCanCreateADiceSet(t *koans.T) {
+func TestCanCreateADiceSet(t *T) {
 	dice := &DiceSet{}
 	t.AssertTrue(dice != nil)
 }
 
-func TestRollingTheDiceReturnsASetOfIntegersBetween_1_And_6(t *koans.T) {
+func TestRollingTheDiceReturnsASetOfIntegersBetween_1_And_6(t *T) {
 	dice :=  &DiceSet{}
 	dice.roll(5)
 	t.AssertEquals(5, len(dice.values))
@@ -25,7 +24,7 @@ func TestRollingTheDiceReturnsASetOfIntegersBetween_1_And_6(t *koans.T) {
 	}
 }
 
-func TestDiceValuesDoNotChangeUnlessExplicitlyRolled(t *koans.T) {
+func TestDiceValuesDoNotChangeUnlessExplicitlyRolled(t *T) {
 	dice := &DiceSet{}
 	dice.roll(5)
 	first_time := dice.values
@@ -34,7 +33,7 @@ func TestDiceValuesDoNotChangeUnlessExplicitlyRolled(t *koans.T) {
 	t.AssertEquals(first_time, second_time)
 }
 
-func TestDiceValuesShouldChangeBetweenRolls(t *koans.T) {
+func TestDiceValuesShouldChangeBetweenRolls(t *T) {
 	dice := &DiceSet{}
 
 	dice.roll(5)
@@ -46,7 +45,7 @@ func TestDiceValuesShouldChangeBetweenRolls(t *koans.T) {
 	t.AssertNotEqual(first_time, second_time)
 }
 
-func TestYouCanRollDifferentNumbersOfDice(t *koans.T) {
+func TestYouCanRollDifferentNumbersOfDice(t *T) {
 	dice := &DiceSet{}
 
 	dice.roll(3)

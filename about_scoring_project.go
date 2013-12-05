@@ -1,6 +1,5 @@
-package about_scoring_project
+package main
 
-import "./koans"
 
 /*
 Greed is a dice game where you roll up to five dice to accumulate
@@ -38,31 +37,31 @@ func score(diceArg []int) int {
 	return -1;
 }
 
-func TestScoreOfAnEmptyListIsZero(t *koans.T) {
+func TestScoreOfAnEmptyListIsZero(t *T) {
 	t.AssertEquals(0, score([]int{}))
 }
 
-func TestScoreOfASingleRollOf_5_Is_50(t *koans.T) {
+func TestScoreOfASingleRollOf_5_Is_50(t *T) {
 	t.AssertEquals(50, score([]int{5}))
 }
 
-func TestScoreOfASingleRollOf_1_Is_100(t *koans.T) {
+func TestScoreOfASingleRollOf_1_Is_100(t *T) {
 	t.AssertEquals(100, score([]int{1}))
 }
 
-func TestScoreOfMultiple_1sAnd_5sIsTheSumOfIndividualScores(t *koans.T) {
+func TestScoreOfMultiple_1sAnd_5sIsTheSumOfIndividualScores(t *T) {
 	t.AssertEquals(300, score([]int{1, 5, 5, 1}))
 }
 
-func TestScoreOfSingle_2s_3s_4s_And_6s_AreZero(t *koans.T) {
+func TestScoreOfSingle_2s_3s_4s_And_6s_AreZero(t *T) {
 	t.AssertEquals(0, score([]int{2, 3, 4, 6}))
 }
 
-func TestScoreOfTriple_1_Is_1000(t *koans.T) {
+func TestScoreOfTriple_1_Is_1000(t *T) {
 	t.AssertEquals(1000, score([]int{1, 1, 1}))
 }
 
-func TestScoreOfOtherTriplesIs_100x(t *koans.T) {
+func TestScoreOfOtherTriplesIs_100x(t *T) {
 	t.AssertEquals(200, score([]int{2, 2, 2}))
 	t.AssertEquals(300, score([]int{3, 3, 3}))
 	t.AssertEquals(400, score([]int{4, 4, 4}))
@@ -70,7 +69,7 @@ func TestScoreOfOtherTriplesIs_100x(t *koans.T) {
 	t.AssertEquals(600, score([]int{6, 6, 6}))
 }
 
-func TestScoreOfMixedIsSum(t *koans.T) {
+func TestScoreOfMixedIsSum(t *T) {
 	t.AssertEquals(250, score([]int{2, 5, 2, 2, 3}))
 	t.AssertEquals(550, score([]int{5, 5, 5, 5}))
 }

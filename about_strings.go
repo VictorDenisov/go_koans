@@ -1,81 +1,80 @@
-package about_strings
+package main
 
-import "./koans"
 import "strings"
 import "fmt"
 
-func TestDoubleQuotedStringsAreStrings(t *koans.T) {
+func TestDoubleQuotedStringsAreStrings(t *T) {
 	str := "hello" //String can be defined with literal
 
-	t.AssertEquals(koans.String__, str)
+	t.AssertEquals(String__, str)
 }
 
-func TestBackQuotedStringsAreStrings(t *koans.T) {
+func TestBackQuotedStringsAreStrings(t *T) {
 	str := `hello\n
 world`
 
-	t.AssertEquals(koans.Int__, len(str))
+	t.AssertEquals(Int__, len(str))
 }
 
-func TestPlusConcatenatesString(t *koans.T) {
+func TestPlusConcatenatesString(t *T) {
 	str := "Hello " + "World"
-	t.AssertEquals(koans.String__, str)
+	t.AssertEquals(String__, str)
 }
 
-func TestPlusWillNotModifyOriginalStrings(t *koans.T) {
+func TestPlusWillNotModifyOriginalStrings(t *T) {
 	hi := "Hello, "
 	there := "world"
 	str := hi + there
-	t.AssertEquals(koans.String__, hi)
-	t.AssertEquals(koans.String__, there)
-	t.AssertEquals(koans.String__, str)
+	t.AssertEquals(String__, hi)
+	t.AssertEquals(String__, there)
+	t.AssertEquals(String__, str)
 }
 
-func TestPlusEqualsWillAppendToEndOfString(t *koans.T) {
+func TestPlusEqualsWillAppendToEndOfString(t *T) {
 	hi := "Hello, "
 	there := "world"
 	hi += there
-	t.AssertEquals(koans.String__, hi)
+	t.AssertEquals(String__, hi)
 }
 
-func TestPlusEqualsAlsoLeavesOriginalStringUnmodified(t *koans.T) {
+func TestPlusEqualsAlsoLeavesOriginalStringUnmodified(t *T) {
 	original := "Hello, "
 	hi := original
 	there := "world"
 	hi += there
-	t.AssertEquals(koans.String__, original)
+	t.AssertEquals(String__, original)
 }
 
-func TestUseSprintfToInterpolateVaribales(t *koans.T) {
+func TestUseSprintfToInterpolateVaribales(t *T) {
 	value1 := "one"
 	value2 := 2
 	str := fmt.Sprintf("The values are %s and %d", value1, value2)
-	t.AssertEquals(koans.String__, str)
+	t.AssertEquals(String__, str)
 }
 
-func TestYouCanGetASubstringFromAString(t *koans.T) {
+func TestYouCanGetASubstringFromAString(t *T) {
 	str := "Bacon, lettuce and tomato"
-	t.AssertEquals(koans.String__, str[7:10])
+	t.AssertEquals(String__, str[7:10])
 }
 
-func TestYouCanGetASingleCharacterFromAString(t *koans.T) {
+func TestYouCanGetASingleCharacterFromAString(t *T) {
 	str := "Bacon, lettuce and tomato"
-	t.AssertTrue(koans.Char__ == str[1])
+	t.AssertTrue(Char__ == str[1])
 }
 
-func TestCharactersAreBytesActually(t *koans.T) {
-	t.AssertTrue(koans.Char__ == 'a'+1)
+func TestCharactersAreBytesActually(t *T) {
+	t.AssertTrue(Char__ == 'a'+1)
 }
 
-func TestStringsCanBeSplit(t *koans.T) {
+func TestStringsCanBeSplit(t *T) {
 	str := "Sausage Egg Cheese"
 	words := strings.Split(str, " ")
-	t.AssertEqualsStringSlices(koans.StringSlice__, words)
+	t.AssertEqualsStringSlices(StringSlice__, words)
 }
 
-func TestStringsCanBeSplitWithDifferentPatterns(t *koans.T) {
+func TestStringsCanBeSplitWithDifferentPatterns(t *T) {
 	str := "the,|;rain;in,spain"
 	words := strings.Split(str, ",|;")
 
-	t.AssertEqualsStringSlices(koans.StringSlice__, words)
+	t.AssertEqualsStringSlices(StringSlice__, words)
 }

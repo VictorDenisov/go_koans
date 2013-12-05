@@ -1,9 +1,8 @@
-package about_nil
+package main
 
-import "./koans"
 
-func TestEmptyPointerIsNil(t *koans.T) {
+func TestEmptyPointerIsNil(t *T) {
 	var p *int
-	t.AssertTrue(koans.Intp__ == p) //Put nil here instead of koans.Intp__
+	t.AssertTrue(Intp__ == p) //Put nil here instead of Intp__
 }
 

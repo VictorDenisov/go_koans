@@ -1,29 +1,28 @@
-package about_tuples
+package main
 
-import "./koans"
 
 func sample() (string, bool) {
 	return "hello", true
 }
 
-func TestTupleAssignment(t *koans.T) {
+func TestTupleAssignment(t *T) {
 	result, errcode := sample()
 
-	t.AssertTrue(koans.String__ == result)
-	t.AssertTrue(koans.Boolean__ == errcode)
+	t.AssertTrue(String__ == result)
+	t.AssertTrue(Boolean__ == errcode)
 }
 
-func TestTupleAssignmentBlankIdentifier(t *koans.T) {
+func TestTupleAssignmentBlankIdentifier(t *T) {
 	result, _ := sample()
 
-	t.AssertTrue(koans.String__ == result)
+	t.AssertTrue(String__ == result)
 }
 
-func TestSwapWithTuples(t *koans.T) {
+func TestSwapWithTuples(t *T) {
 	a := 1
 	b := 2
 	a, b = b, a
-	t.AssertTrue(koans.Int__ == a)
-	t.AssertTrue(koans.Int__ == b)
+	t.AssertTrue(Int__ == a)
+	t.AssertTrue(Int__ == b)
 
 }

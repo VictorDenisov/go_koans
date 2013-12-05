@@ -1,6 +1,5 @@
-package about_methods
+package main
 
-import "./koans"
 
 type Int int
 
@@ -22,29 +21,29 @@ func FunctionWithNamedReturnValues() (a int, b string) {
 	return
 }
 
-func TestFunctionWithNamedReturnValues(t *koans.T) {
+func TestFunctionWithNamedReturnValues(t *T) {
 	intValue, stringValue := FunctionWithNamedReturnValues()
 
-	t.AssertEqualInt(koans.Int__, intValue)
-	t.AssertTrue(koans.String__ == stringValue)
+	t.AssertEqualInt(Int__, intValue)
+	t.AssertTrue(String__ == stringValue)
 }
 
-func TestFunctionWithMultipleReturnTypes(t *koans.T) {
+func TestFunctionWithMultipleReturnTypes(t *T) {
 	intValue, stringValue := FunctionWithMultipleReturnTypes()
 
-	t.AssertEqualInt(koans.Int__, intValue)
-	t.AssertTrue(koans.String__ == stringValue)
+	t.AssertEqualInt(Int__, intValue)
+	t.AssertTrue(String__ == stringValue)
 }
 
-func TestCallingAGlobalFunction(t *koans.T) {
+func TestCallingAGlobalFunction(t *T) {
 	result := AGlobalFunction(3, 4)
-	t.AssertEqualInt(koans.Int__, int(result))
+	t.AssertEqualInt(Int__, int(result))
 }
 
-func TestEveryTypeCanHaveMethods(t *koans.T) {
+func TestEveryTypeCanHaveMethods(t *T) {
 	v := Int(4)
 	result := v.Add(3)
-	t.AssertEqualInt(koans.Int__, int(result))
+	t.AssertEqualInt(Int__, int(result))
 }
 
 type Interface interface {
@@ -60,7 +59,7 @@ func (t *Implementation) ReturnValue () int {
 	return 1
 }
 
-func TestInterfaces(t *koans.T) {
+func TestInterfaces(t *T) {
 	var i Interface
 	v := Implementation{}
 	i = &v //Only pointer to Implementation satisfies Interface.

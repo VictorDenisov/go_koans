@@ -1,4 +1,4 @@
-package koans
+package main
 
 import "runtime"
 import "os"

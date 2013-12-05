@@ -1,8 +1,7 @@
-package about_channels
+package main
 
-import "./koans"
 
-func TestEveryChannelReceiveValue(t *koans.T) {
+func TestEveryChannelReceiveValue(t *T) {
 	count := 0
 	ch := make(chan int, 100)
 	wh := make(chan int)
@@ -33,6 +32,6 @@ func TestEveryChannelReceiveValue(t *koans.T) {
 	}
 	<-wh
 	<-wh
-	t.AssertEquals(koans.Int__, count)
+	t.AssertEquals(Int__, count)
 
 }

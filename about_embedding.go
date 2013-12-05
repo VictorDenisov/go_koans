@@ -1,6 +1,5 @@
-package about_embedding
+package main
 
-import "./koans"
 
 type A interface {
 	getA() string
@@ -45,14 +44,14 @@ func (t *ABimpl) getB() string {
 	return "B"
 }
 
-func TestEmbeddingInterface(t *koans.T) {
+func TestEmbeddingInterface(t *T) {
 	var ab AB = &ABimpl{}
-	t.AssertEquals(koans.String__, ab.getA())
-	t.AssertEquals(koans.String__, ab.getB())
+	t.AssertEquals(String__, ab.getA())
+	t.AssertEquals(String__, ab.getB())
 }
 
-func TestEmbeddingStruct(t *koans.T) {
+func TestEmbeddingStruct(t *T) {
 	ab := &ABembed{}
-	t.AssertEquals(koans.String__, ab.getA())
-	t.AssertEquals(koans.String__, ab.getB())
+	t.AssertEquals(String__, ab.getA())
+	t.AssertEquals(String__, ab.getB())
 }

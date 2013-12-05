@@ -1,6 +1,4 @@
-package triangle
-
-import "os"
+package main
 
 /*
   Triangle Project Code.
@@ -19,6 +17,6 @@ import "os"
     about_triangle_project_2.py
 */
 
-func Triangle(a, b, c int) (result string, error os.Error) {
+func Triangle(a, b, c int) (result string, err error) {
 	return "", nil
 }
