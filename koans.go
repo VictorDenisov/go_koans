@@ -112,13 +112,17 @@ func Main(tests []Test) {
 		go tRunner(t, &tests[i])
 		<-t.ch
 		if t.failed {
+			println("\033[1;31m")
 			println(tests[i].Name, " has damaged your karma.")
 			println("Please keep meditating")
+			println("\033[0m")
 			println(t.errors)
 			ok = false
 			break
 		} else {
+			println("\033[1;32m")
 			println(tests[i].Name, " has expanded your awareness.")
+			println("\033[0m")
 			println(t.errors)
 		}
 	}
