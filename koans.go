@@ -127,8 +127,12 @@ func Main(tests []Test) {
 		}
 	}
 	if !ok {
+		print("\033[1;33m")
 		println("You have not yet reached enlightnment ...")
+		print("\033[0m")
 		os.Exit(1)
 	}
+	print("\033[1;34m")
 	println("Satori!!!")
+	print("\033[0m")
 }
