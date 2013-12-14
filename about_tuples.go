@@ -1,6 +1,5 @@
 package main
 
-
 func sample() (string, bool) {
 	return "hello", true
 }

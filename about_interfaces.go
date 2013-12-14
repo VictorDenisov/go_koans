@@ -1,6 +1,5 @@
 package main
 
-
 type Hellower interface {
 	Hello() string
 }

@@ -1,6 +1,5 @@
 package main
 
-
 type A interface {
 	getA() string
 }

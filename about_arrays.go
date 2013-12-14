@@ -4,7 +4,7 @@ import "fmt"
 
 func TestCreatingArray(t *T) {
 	var array [10]int
-	t.AssertTrue(Int__ == len(array)) //Length of array is part of its type.
+	t.AssertTrue(Int__ == len(array)) //The length of array is part of its type.
 }
 
 func TestArraysAreValues(t *T) {

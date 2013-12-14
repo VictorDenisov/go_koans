@@ -1,15 +1,14 @@
 package main
 
-
 /*
 Greed is a dice game where you roll up to five dice to accumulate
-points.  The following "score" function will be used calculate the
-score of a single roll of the dice.
+points.  The following "score" function will be used to calculate
+the score of a single roll of the dice.
 
 A greed roll is scored as follows:
 
 * A set of three ones is 1000 points
-  
+
 * A set of three numbers (other than ones) is worth 100 times the
   number. (e.g. three fives is 500 points).
 
@@ -34,7 +33,7 @@ Your goal is to write the score method.
 
 func score(diceArg []int) int {
 	//You need to write this method
-	return -1;
+	return -1
 }
 
 func TestScoreOfAnEmptyListIsZero(t *T) {

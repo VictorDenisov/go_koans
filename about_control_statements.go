@@ -49,7 +49,7 @@ func TestContinueStatement(t *T) {
 	result := make([]string, 0)
 	for i < 10 {
 		i += 1
-		if i % 2 == 0 {
+		if i%2 == 0 {
 			continue
 		}
 		result = append(result, fmt.Sprintf("%d", i))
@@ -73,4 +73,3 @@ func TestForEachStatement(t *T) {
 	}
 	t.AssertEqualInt(Int__, result)
 }
-

@@ -4,11 +4,11 @@ import "runtime"
 import "os"
 
 var (
-	Int__ int = -10000
-	Intp__ *int = new(int)
-	String__ string = ""
-	Boolean__ bool = false
-	Char__ byte = '0'
+	Int__         int    = -10000
+	Intp__        *int   = new(int)
+	String__      string = ""
+	Boolean__     bool   = false
+	Char__        byte   = '0'
 	StringSlice__ []string
 )
 
@@ -34,37 +34,37 @@ func (t *T) AssertTrue(value bool) {
 
 func (t *T) AssertEquals(a, b interface{}) {
 	switch v := a.(type) {
-		case []int:
-			n := len(v)
-			w := b.([]int)
-			m := len(w)
-			t.AssertTrue(n == m)
-			for i := 0; i < n; i++ {
-				t.AssertTrue(v[i] == w[i])
-			}
-		case int:
-			t.AssertTrue(v == b.(int))
-		case string:
-			t.AssertTrue(v == b.(string))
+	case []int:
+		n := len(v)
+		w := b.([]int)
+		m := len(w)
+		t.AssertTrue(n == m)
+		for i := 0; i < n; i++ {
+			t.AssertTrue(v[i] == w[i])
+		}
+	case int:
+		t.AssertTrue(v == b.(int))
+	case string:
+		t.AssertTrue(v == b.(string))
 	}
 }
 
 func (t *T) AssertNotEqual(a, b interface{}) {
 	switch v := a.(type) {
-		case []int:
-			equal := true
-			n := len(v)
-			w := b.([]int)
-			m := len(w)
-			equal = equal && (n == m)
-			for i := 0; i < n; i++ {
-				equal = equal && (v[i] == w[i])
-			}
-			t.AssertTrue(!equal)
-		case int:
-			t.AssertTrue(v != b.(int))
-		case string:
-			t.AssertTrue(v != b.(string))
+	case []int:
+		equal := true
+		n := len(v)
+		w := b.([]int)
+		m := len(w)
+		equal = equal && (n == m)
+		for i := 0; i < n; i++ {
+			equal = equal && (v[i] == w[i])
+		}
+		t.AssertTrue(!equal)
+	case int:
+		t.AssertTrue(v != b.(int))
+	case string:
+		t.AssertTrue(v != b.(string))
 	}
 }
 
