@@ -1,6 +1,5 @@
 package main
 
-
 func TestCreatingMap(t *T) {
 	var timeZone = map[string]int{
 		"UTC": 0 * 60 * 60,

@@ -1,6 +1,5 @@
 package main
 
-
 type Int int
 
 func (t Int) Add(v Int) Int {
@@ -54,17 +53,16 @@ type Implementation struct {
 }
 
 // The declaration of this function makes
-// only pointer to Implementation satisfy Interface.
-func (t *Implementation) ReturnValue () int {
+// only a pointer to Implementation satisfy Interface.
+func (t *Implementation) ReturnValue() int {
 	return 1
 }
 
 func TestInterfaces(t *T) {
 	var i Interface
 	v := Implementation{}
-	i = &v //Only pointer to Implementation satisfies Interface.
+	i = &v //Only a pointer to Implementation satisfies Interface.
 	value := i.ReturnValue()
 
 	t.AssertEquals(2, value)
 }
-

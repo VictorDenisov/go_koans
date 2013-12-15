@@ -1,12 +1,12 @@
 package main
 
-
 func TestEveryChannelReceiveValue(t *T) {
 	count := 0
 	ch := make(chan int, 100)
 	wh := make(chan int)
-	go func () {
-		loop: for {
+	go func() {
+	loop:
+		for {
 			select {
 			case <-ch:
 				count++
@@ -16,8 +16,9 @@ func TestEveryChannelReceiveValue(t *T) {
 		}
 		wh <- 1
 	}()
-	go func () {
-		loop: for {
+	go func() {
+	loop:
+		for {
 			select {
 			case <-ch:
 				count++

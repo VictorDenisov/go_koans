@@ -1,12 +1,11 @@
 package main
 
-
 type DiceSet struct {
 	values []int
 }
 
 func (t *DiceSet) roll(n int) {
-	//Need implementing
+	//Needs implementing
 	//Tip: rand.Int
 }
 
@@ -16,7 +15,7 @@ func TestCanCreateADiceSet(t *T) {
 }
 
 func TestRollingTheDiceReturnsASetOfIntegersBetween_1_And_6(t *T) {
-	dice :=  &DiceSet{}
+	dice := &DiceSet{}
 	dice.roll(5)
 	t.AssertEquals(5, len(dice.values))
 	for _, value := range dice.values {

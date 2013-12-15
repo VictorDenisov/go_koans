@@ -4,7 +4,7 @@ import "strings"
 import "fmt"
 
 func TestDoubleQuotedStringsAreStrings(t *T) {
-	str := "hello" //String can be defined with literal
+	str := "hello" //A string can be defined with a literal
 
 	t.AssertEquals(String__, str)
 }
@@ -63,7 +63,7 @@ func TestYouCanGetASingleCharacterFromAString(t *T) {
 }
 
 func TestCharactersAreBytesActually(t *T) {
-	t.AssertTrue(Char__ == 'a' + 1)
+	t.AssertTrue(Char__ == 'a'+1)
 }
 
 func TestStringsCanBeSplit(t *T) {
